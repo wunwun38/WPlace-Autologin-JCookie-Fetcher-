@@ -1,7 +1,5 @@
 # autologin + api_server — README
 
-> Use this only on websites and systems you own or have written permission to test.
-
 ## Purpose
 `autologin.py` shows a simple, local demo of an automated login flow for your own site.  
 It asks a local API for a challenge token, runs a browser, and can send a session value to a local URL you control.
