@@ -1,0 +1,11 @@
+# Core runtime
+camoufox
+browserforge
+playwright
+requests
+stem
+
+# Solver API (api_server.py)
+fastapi
+uvicorn
+loguru
