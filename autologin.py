@@ -40,7 +40,7 @@ USE_TOR = True
 
 # Set to True to run the bot in the background without a visible browser.
 # Set to False to watch the bot work and manually solve Google CAPTCHAs.
-HEADLESS_MODE = False
+HEADLESS_MODE = True
 
 # (Do not edit below this line)
 CTRL_HOST, CTRL_PORT = "127.0.0.1", 9051
