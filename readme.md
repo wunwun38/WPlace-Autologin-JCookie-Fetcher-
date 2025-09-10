@@ -11,7 +11,7 @@ This is a powerful, two-part automation framework designed to log into `wplace.l
 The system is designed to be resilient, remembering its progress and prioritizing accounts that previously failed due to solvable issues.
 
 ### Files
--   `autologin_async_smart_v2.py` — The main client script that orchestrates the login process.
+-   `autologin.py` — The main client script that orchestrates the login process.
 -   `api_server.py` — A local API server that solves the Cloudflare Turnstile CAPTCHA on demand.
 -   `emails.txt` — The list of Google accounts. Format: `email|password`.
 -   `proxies.txt` — The list of HTTP proxies. Format: `host:port`.
@@ -90,7 +90,7 @@ Create these two text files in the same directory as the Python scripts.
 
 ### Configure (OPTIONAL)
 
-Open `autologin_async_smart_v2.py` to adjust key settings at the top of the file:
+Open `autologin.py` to adjust key settings at the top of the file:
 
 -   `USE_TOR = True` or `False`:
     -   Set to `True` to route the Google login process through the Tor network for maximum privacy. **Requires Tor Browser to be running.**
@@ -105,7 +105,7 @@ Open `autologin_async_smart_v2.py` to adjust key settings at the top of the file
 2.  Navigate to your project directory.
 3.  Run the main autologin script:
     ```bash
-    python autologin_async_smart_v2.py
+    python autologin.py
     ```
 
 ### What Happens
